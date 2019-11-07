@@ -2,7 +2,7 @@ import { Injectable, HttpException, HttpStatus } from '@nestjs/common';
 import {
   NestMiddleware,
   MiddlewareFunction
-} from '@nestjs/common/interfaces/middlewares';
+} from '@nestjs/common/interfaces/middleware';
 import * as multer from 'multer';
 import * as path from 'path';
 

@@ -8,7 +8,22 @@ import { User } from './interfaces/user.interface';
 export class UsersService {
   constructor(
     @InjectModel('User') private readonly UserModel: Model<User>
-  ) {}
+  ) {
+
+    // @ts-ignore
+    // this.create({
+    //   username: "bnaya",
+    //   email: "bnaya@gmail.com",
+    //   password: "123"
+    // });
+
+    // // @ts-ignore
+    // this.create({
+    //   username: "daniel",
+    //   email: "daniel@gmail.com",
+    //   password: "123"
+    // });
+  }
 
   async create(user: User): Promise<User> {
     const createdUser = new this.UserModel(user);
